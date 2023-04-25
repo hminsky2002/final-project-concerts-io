@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "concurrently \"npm run start:backend/server.js\" \"npm run start:frontend\""
+  },
   "devDependencies": {
     "eslint": "^8.37.0",
     "eslint-config-airbnb": "^19.0.4",
