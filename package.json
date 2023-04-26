@@ -1,8 +1,10 @@
 {
   "scripts": {
-    "start": "concurrently \"npm run start:backend/server.js\" \"npm run start:frontend\""
+    "start": "concurrently \"cd back-end && npm run start\" \"cd front-end && npm run start\"",
+    "build": "npm install && cd back-end && npm install && cd ../front-end && npm install"
   },
   "devDependencies": {
+    "concurrently": "^8.0.1",
     "eslint": "^8.37.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.8.0",
